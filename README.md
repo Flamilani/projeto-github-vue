@@ -1,3 +1,25 @@
+Instruções de Uso:
+
+Quando iniciar a criar aplicação usando biblioteca Vue.js
+
+- usar comando de criar app: 
+npm install vue
+vue create projeto-github-vue
+cd projeto-github-vue
+npm start
+
+Para adicionar axios que permite consumir API	
+- comando: yarn add axios
+
+Arquitetura:
+Uso de input com chamada de função de "userName" para inserir nome do usuário do github e clicar botão para funcionar a chamada de pesquisa do repositório pelo nome do usuário
+
+Url original: https://api.github.com/users/Flamilani/repos
+
+Com dependência de axios, utiliza a estrutura de URL com parâmetro de userName:
+
+axios.get(`https://api.github.com/users/${this.userName}/repos`)
+
 # projeto-github-vue
 
 > A Vue.js project
